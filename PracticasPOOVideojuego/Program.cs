@@ -12,17 +12,22 @@ namespace PracticasPOOVideojuego
         {
             Videojuego juego = new Videojuego();
 
-            juego.Nombre = "The Legend of Zelda";
-            juego.Genero = "Aventura";
-            juego.Precio = 1299;
-            juego.Plataforma = "Nintendo Switch";
+            juego.Nombre = "Minecraft";
+            juego.Genero = "Sandbox";
+            juego.Precio = 599;
+            juego.Plataforma = "PC";
 
-            juego.MostrarInfo();
+            Jugador jugador = new Jugador();
 
-            Console.WriteLine("\nIntentando asignar un precio negativo...");
+            jugador.Nombre = "Juan";
+            jugador.Edad = 18;
 
-            juego.Precio = -500;
+            Console.WriteLine("=== Información del Jugador ===");
+            jugador.MostrarInfo();
 
+            Console.WriteLine();
+
+            Console.WriteLine("=== Información del Videojuego ===");
             juego.MostrarInfo();
         }
     }
