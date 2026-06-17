@@ -43,25 +43,24 @@ namespace PracticasPOOVideojuego
 
         public void MostrarInfo()
         {
-            Console.WriteLine("Nombre: " + nombre);
-            Console.WriteLine("Género: " + genero);
-            Console.WriteLine("Precio: $" + precio);
-            Console.WriteLine("Plataforma: " + plataforma);
+            Console.WriteLine(nombre);
         }
 
-        public void Iniciar()
+        public void MostrarInfo(string mensaje)
         {
-            Console.WriteLine("Iniciando videojuego...");
+            Console.WriteLine(mensaje);
+            Console.WriteLine(nombre);
         }
 
-        public void GuardarPartida()
+        public void MostrarInfo(bool detallado)
         {
-            Console.WriteLine("Partida guardada.");
-        }
-
-        public void Cerrar()
-        {
-            Console.WriteLine("Cerrando videojuego...");
+            if (detallado)
+            {
+                Console.WriteLine("Nombre: " + nombre);
+                Console.WriteLine("Género: " + genero);
+                Console.WriteLine("Precio: $" + precio);
+                Console.WriteLine("Plataforma: " + plataforma);
+            }
         }
     }
 }

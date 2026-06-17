@@ -17,13 +17,18 @@ namespace PracticasPOOVideojuego
             juego.Precio = 599;
             juego.Plataforma = "PC";
 
+            Console.WriteLine("Primer método:");
             juego.MostrarInfo();
 
             Console.WriteLine();
 
-            juego.Iniciar();
-            juego.GuardarPartida();
-            juego.Cerrar();
+            Console.WriteLine("Segundo método:");
+            juego.MostrarInfo("Información del videojuego:");
+
+            Console.WriteLine();
+
+            Console.WriteLine("Tercer método:");
+            juego.MostrarInfo(true);
         }
     }
 }
