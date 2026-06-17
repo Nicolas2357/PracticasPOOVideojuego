@@ -17,18 +17,13 @@ namespace PracticasPOOVideojuego
             juego.Precio = 599;
             juego.Plataforma = "PC";
 
-            Jugador jugador = new Jugador();
-
-            jugador.Nombre = "Juan";
-            jugador.Edad = 18;
-
-            Console.WriteLine("=== Información del Jugador ===");
-            jugador.MostrarInfo();
+            juego.MostrarInfo();
 
             Console.WriteLine();
 
-            Console.WriteLine("=== Información del Videojuego ===");
-            juego.MostrarInfo();
+            juego.Iniciar();
+            juego.GuardarPartida();
+            juego.Cerrar();
         }
     }
 }

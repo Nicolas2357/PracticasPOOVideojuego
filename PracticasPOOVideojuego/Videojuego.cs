@@ -18,11 +18,13 @@ namespace PracticasPOOVideojuego
             get { return nombre; }
             set { nombre = value; }
         }
+
         public string Genero
         {
             get { return genero; }
             set { genero = value; }
         }
+
         public double Precio
         {
             get { return precio; }
@@ -32,17 +34,34 @@ namespace PracticasPOOVideojuego
                     precio = value;
             }
         }
+
         public string Plataforma
         {
             get { return plataforma; }
             set { plataforma = value; }
         }
+
         public void MostrarInfo()
         {
             Console.WriteLine("Nombre: " + nombre);
             Console.WriteLine("Género: " + genero);
             Console.WriteLine("Precio: $" + precio);
             Console.WriteLine("Plataforma: " + plataforma);
+        }
+
+        public void Iniciar()
+        {
+            Console.WriteLine("Iniciando videojuego...");
+        }
+
+        public void GuardarPartida()
+        {
+            Console.WriteLine("Partida guardada.");
+        }
+
+        public void Cerrar()
+        {
+            Console.WriteLine("Cerrando videojuego...");
         }
     }
 }
